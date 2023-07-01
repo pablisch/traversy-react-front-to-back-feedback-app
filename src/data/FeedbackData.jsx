@@ -7,12 +7,12 @@ const FeedbackData = [
   {
     id: 2,
     rating: 7,
-    text: 'I am feedback message number 2',
+    text: "I am feedback message number 2. I'm a bit longer.",
   },
   {
     id: 3,
     rating: 4,
-    text: 'I am feedback message number 3',
+    text: "I am feedback message number 3. I am considerably longer than the first two.",
   },
 ]
 
