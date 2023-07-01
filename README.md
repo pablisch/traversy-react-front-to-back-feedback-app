@@ -1,4 +1,31 @@
-# Getting Started with Create React App
+# Feedback App
+
+This project is the first project from the Brad Traversy [React Front to Back](https://www.udemy.com/course/modern-react-front-to-back/) course on Udemy.
+
+## Getting Started
+
+#### To run in development mode:
+
+1. Clone the repository to your local machine.
+2. `npm install` to install the dependencies.
+3. `npm start` to start the development server.
+
+The development server will run on [http://localhost:3000](http://localhost:3000) if it is available.
+
+#### To run in production mode:
+
+1. Clone the repository to your local machine.
+2. `npm install` to install the dependencies.
+3. `npm run build` to build the project.
+4. `npm install -g serve` to install the serve package.
+5. `cd build` to change into the build directory.
+6. `serve -s .` to serve the build directory.
+
+The development server will run on [http://localhost:3000](http://localhost:3000).
+
+## Project Design
+
+As a React 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
