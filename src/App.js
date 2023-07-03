@@ -4,6 +4,8 @@ import FeedbackList from './components/FeedbackList'
 import FeedbackData from "./data/FeedbackData"
 import FeedbackStats from './components/FeedbackStats'
 import FeedbackForm from './components/FeedbackForm'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import AboutPage from "./pages/AboutPage"
 
 
 const App = () => {
@@ -11,20 +13,30 @@ const App = () => {
   
   const deleteFeedback = (id) => {
     if (window.confirm('Are you sure you want to delete that item?')) {
-      setFeedback(feedback.filter((item) => item.id !== id ))
+      setFeedback(feedback.filter((item) => item.id !== id))
     }
   }
+
   
   return (
-    <>
-      <Header 
-    />
+    <Router>
+      <Header />
       <div className="container">
-        <FeedbackForm feedback={feedback} />
-        <FeedbackStats feedback={feedback} />
-        <FeedbackList feedback={feedback} handleDelete={deleteFeedback} />
-      </div>
-    </>
+      <Routes>
+          <Route exact path='/' element={
+            
+            <>
+
+            <FeedbackForm feedback={feedback} />
+            <FeedbackStats feedback={feedback} />
+            <FeedbackList feedback={feedback} handleDelete={deleteFeedback} />
+            </>
+        }>
+        </Route>
+        <Route path='/about' element={<AboutPage />} />
+      </Routes>
+          </div>
+    </Router>
   )
 }
 
