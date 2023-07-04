@@ -5,6 +5,7 @@ import FeedbackList from './components/FeedbackList'
 import FeedbackData from "./data/FeedbackData"
 import FeedbackStats from './components/FeedbackStats'
 import FeedbackForm from './components/FeedbackForm'
+import AboutIconLink from './components/AboutIconLink'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import AboutPage from "./pages/AboutPage"
 
@@ -33,13 +34,14 @@ const App = () => {
               <>
                 <FeedbackForm handleAdd={addFeedback} />
                 <FeedbackStats feedback={feedback} />
-                <FeedbackList feedback={feedback} handleDelete={deleteFeedback} />
+              <FeedbackList feedback={feedback} handleDelete={deleteFeedback} />
               </>
             }>
           </Route>
           <Route path='/about' element={<AboutPage />} />
         </Routes>
       </div>
+              <AboutIconLink />
     </Router>
   )
 }
