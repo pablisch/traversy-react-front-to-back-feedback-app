@@ -8,20 +8,26 @@ This project is the first project from the Brad Traversy [React Front to Back](h
 
 1. Clone the repository to your local machine.
 2. `npm install` to install the dependencies.
-3. `npm start` to start the development server.
+3. `npm run server` to start the 'json server' backend server, [http://localhost:5000](http://localhost:5000)
+4. `npm start` to start the development server.
 
-The development server will run on [http://localhost:3000](http://localhost:3000) if it is available.
+**Note:** There is a script to start both the backend and frontend servers at the same time. `npm run dev` will start both servers.
+
+The development frontend app will run on [http://localhost:3000](http://localhost:3000) if it is available.
 
 #### To run in production mode:
 
 1. Clone the repository to your local machine.
 2. `npm install` to install the dependencies.
-3. `npm run build` to build the project.
-4. `npm install -g serve` to install the serve package.
-5. `cd build` to change into the build directory.
-6. `serve -s .` to serve the build directory.
+3. `npm run server` to start the 'json server' backend server, [http://localhost:5000](http://localhost:5000)
+4. `npm run build` to build the project.
+5. `npm install -g serve` to install the serve package.
+6. `cd build` to change into the build directory.
+7. `serve -s .` to serve the build directory.
 
-The development server will run on [http://localhost:3000](http://localhost:3000).
+The production frontend app will run on [http://localhost:3000](http://localhost:3000).
+
+**Note:** There is a deployed version of the frontend app on [Netlify](https://www.netlify.com/). The deployed version of the app can be found at [https://feedback-app-frontend.netlify.app/](https://feedback-app-frontend.netlify.app/).
 
 ## Project Design
 
